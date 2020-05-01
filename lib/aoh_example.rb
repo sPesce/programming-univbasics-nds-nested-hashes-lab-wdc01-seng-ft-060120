@@ -17,10 +17,14 @@ def literal_aoh
   # held in the constants
   literal = []
   count = 0 
-  assembled_aoh.each{|x|
   
-    
+  assembled_aoh.each{|x|
+    literal[count][0] = x[:name]
+    literal[count][1] = x[:occupation]
+    count += 1   
   }
+  
+  literal 
 end
 
 def aoh_lookup(aoh, row, key)

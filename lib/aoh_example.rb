@@ -19,8 +19,11 @@ def literal_aoh
   count = 0 
   
   assembled_aoh.each{|x|
-    literal[count][0] = x[:name]
-    literal[count][1] = x[:occupation]
+  
+    contact = []
+    contact[0] = x[:name]
+    contact[1] = x[:occupation]
+    literal << contact
     count += 1   
   }
   

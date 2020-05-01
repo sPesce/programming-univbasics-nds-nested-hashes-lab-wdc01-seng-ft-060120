@@ -15,19 +15,7 @@ end
 def literal_aoh
   # Using Array literal syntax only, build a nested array that uses the data in
   # held in the constants
-  literal = []
-  count = 0 
-  
-  assembled_aoh.each{|x|
-  
-    contact = []
-    contact[0] = x[:name]
-    contact[1] = x[:occupation]
-    literal << contact
-    count += 1   
-  }
-  
-  literal 
+ [DON_G, JOELLE_VD, PAT_M, KATE_G, BRUCE_G]
 end
 
 def aoh_lookup(aoh, row, key)
